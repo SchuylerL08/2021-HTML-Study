@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Block of Redstone</title>
+    <title>Redstone Comparator</title>
 </head>
 <body>
 <hr>
@@ -26,20 +26,20 @@
     </tr>
 </table>
 <hr>
-<h1>Block of Redstone</h1>
+<h1>Redstone Comparator</h1>
 <br/>
 
 <table>
-
-    <img src="Images/Redstone Block.png" width="300"/>
-    <img src="Images/Redstone Block-t.png" width="300"/>
-
+    <tr>
+        <img src="Images/Comparator.png" width="300"/>
+        <img src="Images/Comparator-2.png" width="300"/>
+    </tr>
 </table>
 <Table border="1">
 
     <tr>
         <th>Block ID</th>
-        <th>152</th>
+        <th>404</th>
     </tr>
     <tr>
         <th>Stack Size</th>
@@ -47,7 +47,7 @@
     </tr>
     <tr>
         <th>Blast Resistance</th>
-        <th>5</th>
+        <th>0</th>
     </tr>
 
 
@@ -55,10 +55,17 @@
 <br/>
 Uses:
 <ul>
-    <li>Circuits: Used to provide power to all six sides of the block.
+    <li>Circuits:
+        <ul>
+            <li>Can generate a redstone signal based on how full a container is that the comparator is placed against</li>
+            <li>Can be used to maintain a signal strength allowing the redstone signal to pass through it without losing or gaining any strength</li>
+            <li>In compare mode a comparator compares its rear input to its two side inputs. If either side input is greater than the rear input, the comparator output turns off. If neither side input is greater than the rear input, the comparator outputs the same signal strength as its rear input.</li>
+            <li>In subtract mode a comparator subtracts the signal strength of the higher side input from the signal strength of the rear input.</li>
+        </ul>
+    </li>
     <li>Brewing: No use</li>
-    <li>Crafting: Can be crafted back into nine redstone dust</li>
-    <li>Recipe: Nine redstone dust</li>
+    <li>Crafting: No use</li>
+    <li>Recipe: Three stone blocks, three redstone torches, and one nether quartz</li>
 </ul>
 <hr>
 <br/>
